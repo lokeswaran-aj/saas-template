@@ -6,7 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write .",
+    "db:start": "docker compose up -d",
+    "db:stop": "docker compose stop",
+    "db:down": "docker compose down"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
