@@ -8,7 +8,7 @@ export async function middleware(request: NextRequest) {
     cookiePrefix: CONSTANTS.COOKIE_PREFIX,
   });
   if (!session) {
-    return NextResponse.redirect(new URL("/login", request.url));
+    return NextResponse.redirect(new URL("/sign-in", request.url));
   }
   return NextResponse.next();
 }
